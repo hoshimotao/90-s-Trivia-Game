@@ -1,6 +1,7 @@
 // Timer 
 document.querySelector("#start").addEventListener("click", startGame);
 
+
 function startGame(){
   console.log('start')  
   let timer = 60;
@@ -16,7 +17,8 @@ function startGame(){
 }
 //
 // This block is important and gives us a random question and img
-let randNum = Math.floor(Math.random() * questionsAndAnswers.length);
+
+var randNum = Math.floor(Math.random() * questionsAndAnswers.length);
 
 let randomQ = questionsAndAnswers[randNum].question; 
 
@@ -50,16 +52,14 @@ if(questionsAndAnswers.length > 0){
 newCopy = questionsAndAnswers.splice(randNum,1);
 
 }
-
-newAnswers();
+newAnswers()
 }
-
 
 let randomAns = questionsAndAnswers[randNum].incorrect;
 
 let correctAns = questionsAndAnswers[randNum].correct;
 
-let newArr = [randomAns[0], randomAns[1], randomAns[2], correctAns];
+var newArr = [randomAns[0], randomAns[1], randomAns[2], correctAns];
 
 let newerArray = [];
 
@@ -72,20 +72,26 @@ console.log(questionsAndAnswers)
 }
 
 
-
 function newAnswers(){
+
 while(newArr.length > 0){
   let rand = Math.floor(Math.random() * newArr.length);
   console.log(newArr[rand]);
    newerArray.push(newArr[rand])
-    newArr.splice(rand,1);
-}
+   newArr.splice(rand,1);
+   
 document.querySelector("#one").innerHTML = newerArray[0];
 document.querySelector("#two").innerHTML = newerArray[1];
 document.querySelector("#three").innerHTML = newerArray[2];
 document.querySelector("#four").innerHTML = newerArray[3];
 }
+}
+
 newQ()
+
+//HERE
+
+
 
 
 
@@ -149,3 +155,6 @@ function fourBtn(){
   }
 }
 
+function makeVisible(){
+  document.querySelector(".invisible").style.visibility = "visible";
+}

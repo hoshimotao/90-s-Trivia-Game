@@ -7,6 +7,7 @@ body {
   max-width: 100%;
   max-height: auto;
   color: white;
+  min-height: 96vh;
 }
 
 #score {
@@ -50,6 +51,11 @@ h4 {
   margin-top: 5%;
   padding-left: 10%;
   padding-bottom: 50px;
+  
+}
+
+.invisible {
+  visibility: hidden;
 }
 
 #imgID {
@@ -119,6 +125,7 @@ button {
   margin-left: 10px;
   transition: all 0.3s;
   border-radius: 10px;
+  
 }
 
 button:hover {
