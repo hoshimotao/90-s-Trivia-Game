@@ -1,14 +1,19 @@
 // Timer 
-let timer = 35;
-let int = setInterval(function(){
-  console.log(timer)
-  timer--;
-  document.querySelector("#seconds").innerHTML = timer;
-  if(timer === 0){
-    alert(`Your Score: ${score.innerHTML}`)
-    clearInterval(int)
-  }
-}, 1000)
+document.querySelector("#start").addEventListener("click", startGame);
+
+function startGame(){
+  console.log('start')  
+  let timer = 60;
+  let int = setInterval(function(){
+    console.log(timer)
+    timer--;
+    document.querySelector("#seconds").innerHTML = timer;
+    if(timer === 0){
+      alert(`Your Score: ${score.innerHTML}`)
+      clearInterval(int)
+    }
+  }, 1000)
+}
 //
 // This block is important and gives us a random question and img
 let randNum = Math.floor(Math.random() * questionsAndAnswers.length);
@@ -143,3 +148,4 @@ function fourBtn(){
     newQ();
   }
 }
+

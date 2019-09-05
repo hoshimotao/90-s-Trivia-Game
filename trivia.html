@@ -1,50 +1,57 @@
 <!DOCTYPE html>
-<html lang ="en">
+<html lang="en">
+
 <head>
-  <meta charset = "utf-8">
-  <link href = "trivia.css" rel = "stylesheet" type = "text/css" />
-<title> Trivia Game </title>
+  <meta charset="utf-8">
+  <link href="trivia.css" rel="stylesheet" type="text/css" />
+  <title> Trivia Game </title>
 </head>
 
 <body>
 
-  <h1> 90's Cartoon Trivia </h1>
+  <div class="navigationStation">
+    <p id="h1"> 90's Cartoon Trivia </p>
 
-  <div id = "score">
-  <h2>Score: <span> 0 </span></h2>
-  <h3> Seconds: <span id = "seconds"> 35 </span></h3>
+    <button id="start"> START GAME </button>
+    <div id="score">
+        <h3> Seconds: <span id="seconds"> 60 </span></h3>
+        <h2>Score: <span> 0 </span></h2>
+    
+      </div>
   </div>
+
+  <div id = "qanda">
+    
+
+  <div id="singleQ" text-align="center"> Q's </div>
+  <img id="imgID" src="./images/courage.png">
+
   
 
-<h4><span> Question: </span></h4> 
+  <div id="ans">
+    <button onclick="oneBtn()" id="one">
+      hey
+    </button>
 
-<div id = "singleQ" text-align = "center"> Q's </div>
-<img id="imgID" src="./images/courage.png" >
+    <button onclick="twoBtn()" id="two">
+      hey
+    </button>
 
-<div class = "pic"></div>
+    <button onclick="threeBtn()" id="three">
+      hey
+    </button>
 
-<div id = "ans">
-<button onclick="oneBtn()" id = "one">
-  hey
-</button>
+    <button onclick="fourBtn()" id="four">
+      hey
+    </button>
+  </div>
+  </div>
 
-<button onclick="twoBtn()" id = "two">
-  hey
-</button>
 
-<button onclick="threeBtn()" id = "three">
-  hey
-</button>
 
-<button onclick="fourBtn()" id = "four">
-  hey
-</button>
-</div>
-  
-  
-  
-  
-  <script src = "trivia.js"></script>
-  <script src = "triviaFunct.js"></script>
+
+  <script src="trivia.js"></script>
+  <script src="triviaFunct.js"></script>
 </body>
+
 </html>
