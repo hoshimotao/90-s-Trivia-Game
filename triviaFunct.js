@@ -1,19 +1,61 @@
+var backdrop = document.querySelector(".backdrop");
+var modal = document.querySelector("#modal");
+var correctModal = document.querySelector("#correctModal");
+var incorrectModal = document.querySelector("#incorrectModal");
+var restart = document.querySelector("#restart");
+var notice = document.querySelector("body > div:nth-child(2) > h1").innerHTML;
+var finalScore = document.getElementsByClassName("finalScore");
+var score = document.querySelector("#score > h2 > span");
+var score2 = 0;
+
+
+
+
+// Open Modal
+function openModal() {
+  backdrop.style.display = "block";
+  modal.style.display = "block";
+}
+function openCorrect() {
+  backdrop.style.display = "block";
+  correctModal.style.display = "block";
+}
+function openIncorrect() {
+  backdrop.style.display = "block";
+  incorrectModal.style.display = "block";
+}
+//Close Modal
+function closeModal() {
+  backdrop.style.display = "none";
+  modal.style.display = "none";
+}
+
+function closeCorrect() {
+  backdrop.style.display = "none";
+  correctModal.style.display = "none";
+}
+
+function closeIncorrect() {
+  backdrop.style.display = "none";
+  incorrectModal.style.display = "none";
+}
+
 // Timer
 document.querySelector("#start").addEventListener("click", startGame);
 
 function startGame() {
   console.log("start");
-  var timer = 90;
+  var timer = 120;
   let int = setInterval(function() {
     console.log(timer);
     timer--;
     document.querySelector("#seconds").innerHTML = timer;
     if (timer === 0) {
-      confirm(`Your Score: ${score.innerHTML}`);
       clearInterval(int);
-      if (confirm(`Your Score: ${score.innerHTML}`) === true) {
-        window.location.reload();
-      }
+      openModal();
+      finalScore = score.innerHTML;
+      console.log("modal opened");
+      console.log(score.innerHTML);
     }
   }, 1000);
 }
@@ -84,60 +126,59 @@ function newAnswers() {
 
 newQ();
 
-//HERE
-
-var score = document.querySelector("#score > h2 > span");
-var score2 = 0;
-
 console.log(score);
 console.log(score.innerHTML);
 
 // Button one
 function oneBtn() {
   if (document.querySelector("#one").innerHTML == correctAns) {
-    alert("That is correct!");
+    openCorrect();
+    notice = "Nice Job!";
     score2 += 1;
     score.innerHTML = score2;
-    newQ();
+    
   } else {
-    alert("EPIC FAIL!");
-    newQ();
+    openIncorrect();
+    
   }
 }
 // Button two
 function twoBtn() {
   if (document.querySelector("#two").innerHTML == correctAns) {
-    alert("That is correct!");
+    openCorrect();
+    notice = "Nice Job!";
     score2 += 1;
     score.innerHTML = score2;
-    newQ();
+    
   } else {
-    alert("EPIC FAIL!");
-    newQ();
+    openIncorrect();
+    
   }
 }
 // Button three
 function threeBtn() {
   if (document.querySelector("#three").innerHTML == correctAns) {
-    alert("That is correct!");
+    openCorrect();
+    notice = "Nice Job!";
     score2 += 1;
     score.innerHTML = score2;
-    newQ();
+    
   } else {
-    alert("EPIC FAIL!");
-    newQ();
+    openIncorrect();
+    
   }
 }
 // Button four
 function fourBtn() {
   if (document.querySelector("#four").innerHTML == correctAns) {
-    alert("That is correct!");
+    openCorrect();
+    notice = "Nice Job!";
     score2 += 1;
     score.innerHTML = score2;
-    newQ();
+    
   } else {
-    alert("EPIC FAIL!");
-    newQ();
+    openIncorrect();
+    
   }
 }
 

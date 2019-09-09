@@ -8,6 +8,29 @@
 </head>
 
 <body>
+<!-- restart game modal-->
+  <div class = "backdrop"></div>
+  <div id="modal"> 
+    <h1> SCORE</h1>
+    <p> <span class="finalScore"></span></p>
+    <button id="restart"  onclick = "location.reload()"> Play Again </button>
+  </div>
+
+  <!-- correct/incorrect modals -->
+
+  <div class = "backdrop"></div>
+  <div id="correctModal"> 
+    <h1> Correct! Nice job.</h1>    
+    <button class ="continue" onclick = "closeCorrect(); newQ()" > Continue </button>
+  </div>
+
+  <div class = "backdrop"></div>
+  <div id="incorrectModal"> 
+    <h1> Better luck next time.</h1>    
+    <button class="continue" onclick = "closeIncorrect(); newQ()"> Continue </button>
+  </div>
+
+  <!--end of modals-->
 
   <div class="navigationStation">
     <p id="h1"> 90's Cartoon Trivia </p>

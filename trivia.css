@@ -140,3 +140,84 @@ button:hover {
   flex-direction: column;
   margin-top: -20px;
 }
+
+.backdrop{
+ display: none;
+  position: fixed;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+#modal{
+
+ display: none;
+  position: fixed;
+  background: white;
+  padding: 10px;
+  width: 260px;
+  top: 150px;
+  margin-left: 40%;
+  z-index: 1;
+  text-align: center;
+  color: black;
+}
+
+@media (min-width: 400px){
+  #modal{
+    width: 300;
+    left: calc(50%-190px);
+  }
+}
+
+@media (min-width: 400px){
+  .continue{
+    width: 300;
+    left: calc(50%-190px);
+  }
+}
+
+#restart{
+  background-color: lightblue;
+}
+#restart:hover{
+  width: 90%;
+  height: 20%;
+}
+.continue{
+  background-color: lightblue;
+}
+.continue:hover{
+  width: 90%;
+  height: 20%;
+}
+#correctModal{
+  display: none;
+   position: fixed;
+   background: white;
+   padding: 10px;
+   width: 260px;
+   top: 150px;
+   margin-left: 40%;
+   z-index: 1;
+   text-align: center;
+   color: black;
+ }
+#incorrectModal{
+    display: none;
+     position: fixed;
+     background: white;
+     padding: 10px;
+     width: 260px;
+     top: 150px;
+     margin-left: 40%;
+     z-index: 1;
+     text-align: center;
+     color: black;
+   }
+
+
+
+
