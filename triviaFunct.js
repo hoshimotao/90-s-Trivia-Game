@@ -3,7 +3,7 @@ document.querySelector("#start").addEventListener("click", startGame);
 
 function startGame() {
   console.log("start");
-  var timer = 120;
+  var timer = 90;
   let int = setInterval(function() {
     console.log(timer);
     timer--;

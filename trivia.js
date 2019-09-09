@@ -108,9 +108,9 @@ const questionsAndAnswers = [
     incorrect: ["Big Foot", "Smart Shoe", "White Foot"]  
   },
   {
-    question: "What is the binomenclature given to Dexter during an episode featuring him from a documentary perspective?", 
-    image: "./images/dexter2.png",
-    correct: "Black Foot",
-    incorrect: ["Big Foot", "Smart Shoe", "White Foot"]  
+    question: "How old is Patrick Star?", 
+    image: "./images/patrick2.png",
+    correct: "41",
+    incorrect: ["11", "21", "31"]  
   }
 ];

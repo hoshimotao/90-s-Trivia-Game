@@ -12,43 +12,37 @@
   <div class="navigationStation">
     <p id="h1"> 90's Cartoon Trivia </p>
 
-    <button id="start"  onclick="makeVisible()"> START GAME </button>
+    <button id="start" onclick="makeVisible()"> START GAME </button>
     <div id="score">
-        <h3> Seconds: <span id="seconds"> 120 </span></h3>
-        <h2>Score: <span> 0 </span></h2>
-    
-      </div>
+      <h3> Seconds: <span id="seconds"> 90 </span></h3>
+      <h2>Score: <span> 0 </span></h2>
+
+    </div>
   </div>
 
-  <div id = "qanda" class= "invisible">
-    
+  <div id="qanda" class="invisible">
 
-  <div id="singleQ" text-align="center"> </div>
-  <img id="imgID">
+    <div id="singleQ" text-align="center"> </div>
+    <img id="imgID">
 
-  
+    <div id="ans">
+      <button onclick="oneBtn()" id="one">
 
-  <div id="ans">
-    <button onclick="oneBtn()" id="one">
-      
-    </button>
+      </button>
 
-    <button onclick="twoBtn()" id="two">
-      
-    </button>
+      <button onclick="twoBtn()" id="two">
 
-    <button onclick="threeBtn()" id="three">
-      
-    </button>
+      </button>
 
-    <button onclick="fourBtn()" id="four">
-      
-    </button>
+      <button onclick="threeBtn()" id="three">
+
+      </button>
+
+      <button onclick="fourBtn()" id="four">
+
+      </button>
+    </div>
   </div>
-  </div>
-
-
-
 
   <script src="trivia.js"></script>
   <script src="triviaFunct.js"></script>
