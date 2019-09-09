@@ -11,7 +11,7 @@ function startGame() {
     if (timer === 0) {
       confirm(`Your Score: ${score.innerHTML}`);
       clearInterval(int);
-      if (confirm(`Your Score: ${score.innerHTML}`) == true) {
+      if (confirm(`Your Score: ${score.innerHTML}`) === true) {
         window.location.reload();
       }
     }
