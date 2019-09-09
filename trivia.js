@@ -88,5 +88,29 @@ const questionsAndAnswers = [
     image: "./images/rocketPower.gif",
     correct: "Shoebies",
     incorrect: ["Tourists", "Shoobs", "Dorks"]
+  },
+  {
+    question: "Who lives under a rock under the sea?", 
+    image: "./images/patrick.jpg",
+    correct: "Patrick Star",
+    incorrect: ["Spongebob", "Squidward", "Mr. Krabs"]  
+  },
+  {
+    question: "Name the show that featured both a feline and canine attached at the hip.", 
+    image: "./images/catDog.jpg",
+    correct: "Cat Dog",
+    incorrect: ["Spongebob", "BaeWatch", "Eleven"]  
+  },
+  {
+    question: "What is the binomenclature given to Dexter during an episode featuring him from a documentary perspective?", 
+    image: "./images/dexter2.png",
+    correct: "Black Foot",
+    incorrect: ["Big Foot", "Smart Shoe", "White Foot"]  
+  },
+  {
+    question: "What is the binomenclature given to Dexter during an episode featuring him from a documentary perspective?", 
+    image: "./images/dexter2.png",
+    correct: "Black Foot",
+    incorrect: ["Big Foot", "Smart Shoe", "White Foot"]  
   }
 ];
