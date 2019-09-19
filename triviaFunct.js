@@ -4,8 +4,12 @@ var correctModal = document.querySelector("#correctModal");
 var incorrectModal = document.querySelector("#incorrectModal");
 var restart = document.querySelector("#restart");
 var notice = document.querySelector("body > div:nth-child(2) > h1").innerHTML;
-var finalScore = document.getElementsByClassName("finalScore");
+
+
+var finalScore = document.querySelector("#modal > p > span");
+
 var score = document.querySelector("#score > h2 > span");
+
 var score2 = 0;
 
 
@@ -45,7 +49,7 @@ document.querySelector("#start").addEventListener("click", startGame);
 
 function startGame() {
   console.log("start");
-  var timer = 120;
+  var timer = 5;
   let int = setInterval(function() {
     console.log(timer);
     timer--;
@@ -53,10 +57,11 @@ function startGame() {
     if (timer === 0) {
       clearInterval(int);
       openModal();
-      finalScore = score.innerHTML;
       console.log("modal opened");
       console.log(score.innerHTML);
+      console.log(finalScore);
     }
+    finalScore.innerHTML = score.innerHTML;
   }, 1000);
 }
 //
