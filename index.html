@@ -8,26 +8,26 @@
 </head>
 
 <body>
-<!-- restart game modal-->
-  <div class = "backdrop"></div>
-  <div id="modal"> 
+  <!-- restart game modal-->
+  <div class="backdrop"></div>
+  <div id="modal">
     <h1> SCORE</h1>
     <p> <span class="finalScore"> 00 </span></p>
-    <button id="restart"  onclick = "location.reload()"> Play Again </button>
+    <button id="restart" onclick="location.reload()"> Play Again </button>
   </div>
 
   <!-- correct/incorrect modals -->
 
-  <div class = "backdrop"></div>
-  <div id="correctModal"> 
-    <h1> Correct! Nice job.</h1>    
-    <button class ="continue" onclick = "closeCorrect(); newQ()" > Continue </button>
+  <div class="backdrop"></div>
+  <div id="correctModal">
+    <h1> Correct! Nice job.</h1>
+    <button class="continue" onclick="closeCorrect(); newQ()"> Continue </button>
   </div>
 
-  <div class = "backdrop"></div>
-  <div id="incorrectModal"> 
-    <h1> Better luck next time.</h1>    
-    <button class="continue" onclick = "closeIncorrect(); newQ()"> Continue </button>
+  <div class="backdrop"></div>
+  <div id="incorrectModal">
+    <h1> Better luck next time.</h1>
+    <button class="continue" onclick="closeIncorrect(); newQ()"> Continue </button>
   </div>
 
   <!--end of modals-->
@@ -37,7 +37,7 @@
 
     <button id="start" onclick="makeVisible()"> START GAME </button>
     <div id="score">
-      <h3> Seconds: <span id="seconds"> 90 </span></h3>
+      <h3> Seconds: <span id="seconds"> 120 </span></h3>
       <h2>Score: <span> 0 </span></h2>
 
     </div>
@@ -49,21 +49,13 @@
     <img id="imgID">
 
     <div id="ans">
-      <button onclick="oneBtn()" id="one">
+      <button onclick="oneBtn()" id="one"> </button>
 
-      </button>
+      <button onclick="twoBtn()" id="two"> </button>
 
-      <button onclick="twoBtn()" id="two">
+      <button onclick="threeBtn()" id="three"> </button>
 
-      </button>
-
-      <button onclick="threeBtn()" id="three">
-
-      </button>
-
-      <button onclick="fourBtn()" id="four">
-
-      </button>
+      <button onclick="fourBtn()" id="four"> </button>
     </div>
   </div>
 

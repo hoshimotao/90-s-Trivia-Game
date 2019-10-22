@@ -5,15 +5,11 @@ var incorrectModal = document.querySelector("#incorrectModal");
 var restart = document.querySelector("#restart");
 var notice = document.querySelector("body > div:nth-child(2) > h1").innerHTML;
 
-
 var finalScore = document.querySelector("#modal > p > span");
 
 var score = document.querySelector("#score > h2 > span");
 
 var score2 = 0;
-
-
-
 
 // Open Modal
 function openModal() {
@@ -48,6 +44,8 @@ function closeIncorrect() {
 document.querySelector("#start").addEventListener("click", startGame);
 
 function startGame() {
+  document.querySelector("#start").style.visibility = "hidden";
+
   console.log("start");
   var timer = 5;
   let int = setInterval(function() {
@@ -57,6 +55,7 @@ function startGame() {
     if (timer === 0) {
       clearInterval(int);
       openModal();
+
       console.log("modal opened");
       console.log(score.innerHTML);
       console.log(finalScore);
@@ -141,10 +140,8 @@ function oneBtn() {
     notice = "Nice Job!";
     score2 += 1;
     score.innerHTML = score2;
-    
   } else {
     openIncorrect();
-    
   }
 }
 // Button two
@@ -154,12 +151,11 @@ function twoBtn() {
     notice = "Nice Job!";
     score2 += 1;
     score.innerHTML = score2;
-    
   } else {
     openIncorrect();
-    
   }
 }
+
 // Button three
 function threeBtn() {
   if (document.querySelector("#three").innerHTML == correctAns) {
@@ -167,12 +163,11 @@ function threeBtn() {
     notice = "Nice Job!";
     score2 += 1;
     score.innerHTML = score2;
-    
   } else {
     openIncorrect();
-    
   }
 }
+
 // Button four
 function fourBtn() {
   if (document.querySelector("#four").innerHTML == correctAns) {
@@ -180,10 +175,8 @@ function fourBtn() {
     notice = "Nice Job!";
     score2 += 1;
     score.innerHTML = score2;
-    
   } else {
     openIncorrect();
-    
   }
 }
 
