@@ -55,6 +55,7 @@ h4 {
 
 .invisible {
   visibility: hidden;
+  margin-left: 20vw;
 }
 
 #imgID {
@@ -67,7 +68,7 @@ h4 {
 #singleQ {
   font-size: 2em;
   width: 45vw;
-  margin-left: 400;
+  
 }
 
 #seconds {
