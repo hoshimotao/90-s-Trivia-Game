@@ -47,7 +47,7 @@ function startGame() {
   document.querySelector("#start").style.visibility = "hidden";
 
   console.log("start");
-  var timer = 5;
+  var timer = 120;
   let int = setInterval(function() {
     console.log(timer);
     timer--;
